@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Typography from "@material-ui/core/Typography"
 import Button from '@material-ui/core/Button'
 import { makeStyles, createStyles } from '@material-ui/core/styles'
 // import { T}
@@ -14,7 +15,7 @@ const Home: NextPage = () => {
   const classes = useStyles();
   return (
     <>
-      <Button className={classes.root} variant="contained" color="primary">yes </Button>
+      <Typography variant="h6">to be done</Typography>
     </>
   )
 }
