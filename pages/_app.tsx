@@ -1,9 +1,10 @@
 import type { AppProps } from 'next/app'
-import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
-import theme from '../styles/theme';
-import Head from "next/head";
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Footer from '../components/Footer';
+import Head from "next/head";
+import Header from '../components/Header';
+import theme from '../styles/theme';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <Header />
         <Component {...pageProps} />
         <Footer />
       </ThemeProvider>
